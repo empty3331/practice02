@@ -10,6 +10,7 @@ public class Ex13 {
 		//f(a)= x<=0, x세제곱-9x+2
 		//      x>0 , 7x+2
 		double x;
+		double result;
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("숫자를 입력해 주세요");
@@ -19,10 +20,13 @@ public class Ex13 {
 		
 		
 		if(x<0||x==0) {
-			System.out.print((x*x*x)-(9*x)+2);
+			result = (x*x*x)-(9*x)+2;
+			System.out.print(result);
 		}
 		
-		else {System.out.print(7*x+2);}
+		else {
+			result =7*x+2;
+			System.out.print(result);}
 		
 		System.out.println(" 입니다.");
 		
